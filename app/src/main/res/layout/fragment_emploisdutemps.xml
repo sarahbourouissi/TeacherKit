@@ -1,0 +1,54 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/calender_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                android:id="@+id/compactcalendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                app:compactCalendarBackgroundColor="@color/colorPrimary"
+                app:compactCalendarCurrentDayBackgroundColor="@color/colorPrimaryDark"
+                app:compactCalendarCurrentSelectedDayBackgroundColor="@color/bg_login"
+                app:compactCalendarTextColor="@color/cardview_light_background"
+                app:compactCalendarTextSize="12sp" />
+
+            <ListView
+                android:id="@+id/bookings_listview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"></ListView>
+        </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSeance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="#FFFFFF"
+        app:backgroundTint="@android:color/white"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+
+</android.support.design.widget.CoordinatorLayout>

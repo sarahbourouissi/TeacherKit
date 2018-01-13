@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/etudiants_card"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+
+    android:foreground="?selectableItemBackground"
+    android:clickable="true">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <com.pkmmte.view.CircularImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/img"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="12dp"
+            app:border="true"
+            app:border_color="@color/red"
+            app:border_width="2dp"
+            app:shadow="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/etudiant_nom"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:lines="1"
+            android:paddingTop="10dp"
+            android:ellipsize="marquee"
+            android:layout_alignTop="@+id/img"
+            android:layout_toRightOf="@+id/img"
+            android:layout_toEndOf="@+id/img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+           android:id="@+id/etudiant_prenom"
+            android:layout_marginRight="15dp"
+            android:lines="2"
+            android:paddingBottom="10dp"
+            android:ellipsize="end"
+            android:layout_below="@+id/etudiant_nom"
+            android:layout_alignLeft="@+id/etudiant_nom"
+            android:layout_alignStart="@+id/etudiant_nom" />
+
+        <ImageView
+            android:id="@+id/overflow"
+            android:layout_width="@dimen/ic_album_overflow_width"
+            android:layout_height="@dimen/ic_album_overflow_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/etudiant_nom"
+            android:layout_marginTop="@dimen/ic_album_overflow_margin_top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_dots" />
+
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Profil"
+            android:icon="@drawable/ic_profile"
+            android:title="Profil" />
+        <item
+            android:id="@+id/nav_classe"
+            android:icon="@drawable/ic_classes"
+            android:title="Mes Classes" />
+        <item
+            android:id="@+id/nav_Emplois"
+            android:icon="@drawable/ic_emp"
+            android:title="Mon Emplois du temps" />
+
+
+    </group>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="déconnexion"
+                />
+
+
+
+</menu>

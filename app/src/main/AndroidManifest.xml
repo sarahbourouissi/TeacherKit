@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.miniproject.teacherkit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_teacherkit"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".AjoutClasse" />
+        <activity android:name=".AjoutEtudiant" />
+        <activity android:name=".ClasseCard" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".AjoutComportement"
+            android:label="@string/title_activity_ajout_comportement"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RecyclerComportment" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DraggableGridExampleActivity" />
+        <activity
+            android:name=".etudiant_detail"
+            android:label="@string/title_activity_etudiant_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName="com.android.miniproject.teacherkit.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AjoutSeanceActivity" />
+        <activity
+            android:name=".etudiant_modifier"
+            android:label="@string/title_activity_etudiant_modifier"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".classe_modifier"
+            android:label="@string/title_activity_classe_modifier"
+            android:theme="@style/AppTheme.NoActionBar"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

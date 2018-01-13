@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">TeacherKit</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_recycle_view">recycleView</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_ajout_comportement">AjoutComportement</string>
+    <string name="title_activity_etudiant_detail">etudiant_detail</string>
+    <string name="rfab_identification_code_fragment_a">RFAB_IDENTIFICATION_CODE_FRAGMENT_A</string>
+    <string name="rfab_identification_code_fragment_b">RFAB_IDENTIFICATION_CODE_FRAGMENT_B</string>
+    <string name="rfab_identification_code_fragment_c">RFAB_IDENTIFICATION_CODE_FRAGMENT_C</string>
+    <string name="model_clicked_pattern">You clicked on %s!</string>
+    <string name="nom">Nom :</string>
+
+    <string name="hint_email">Email ...</string>
+    <string name="hint_password">Password ...</string>
+    <string name="hint_name">Fullname ...</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? register now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="facebook_app_id">327242320989371</string>
+    <string name="color_dialog_title">Choose color</string>
+    <string-array name="comportement">
+        <item>excellent</item>
+        <item>passable</item>
+        <item>nul</item>
+
+    </string-array>
+
+    <item name="green" type="color">#FF99CC00</item>
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="red" type="color">#FFFF4444</item>
+
+
+    <integer-array name="androidcolors">
+
+        <item>@color/green</item>
+        <item>@color/orange</item>
+        <item>@color/red</item>
+
+
+    </integer-array>
+    <string name="title_activity_etudiant_modifier">etudiant_modifier</string>
+    <string name="title_activity_classe_modifier">classe_modifier</string>
+
+</resources>

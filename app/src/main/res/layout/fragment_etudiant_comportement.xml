@@ -1,0 +1,31 @@
+
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_height="match_parent"
+tools:context="com.android.miniproject.teacherkit.etudiantComportementFragment"
+android:id="@+id/frame_comportement"
+android:orientation="vertical">
+
+
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="aucun comportement attribué"
+    android:textSize="18sp"
+    android:textAlignment="center"
+    android:id="@+id/comp"/>
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/recycle_view_comportement"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="listener"
+            type="com.android.miniproject.teacherkit.searchEtudiantAdapter.Listener" />
+
+        <variable
+            name="e"
+            type="com.android.miniproject.teacherkit.Entity.Etudiant"/>
+
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="@{view -> listener.onSearchEtudiantClicked(e)}"
+    >
+
+
+        <TextView
+            android:id="@+id/nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+
+            android:text="@{e.nom}"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_toRightOf="@id/nom"
+            android:text="@{e.prenom }"
+
+            />
+
+</RelativeLayout>
+
+    </FrameLayout>
+
+</layout>

@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:text="Ajouter Seance"
+    android:textStyle="normal|bold"
+    android:fontFamily="serif"
+    android:textSize="24sp"
+    android:textAlignment="center" />
+    <EditText
+        android:id="@+id/seance_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/input_bg"
+        android:hint="Title"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/input_login"
+        android:textColorHint="@color/input_login_hint"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_classe"
+        android:background="@drawable/input_bg"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+       />
+
+
+    <Button
+        android:id="@+id/date_button"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_bg"
+        android:text="Date"
+        android:textColor="@color/input_login"
+        android:layout_height="40dip" />
+
+    <Button
+        android:id="@+id/time_button"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_bg"
+        android:text="Time"
+        android:textColor="@color/input_login" />
+    <EditText
+       android:id="@+id/seance_desc"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_bg"
+        android:hint="description"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:singleLine="false"
+        android:textColor="@color/input_login"
+        android:textColorHint="@color/input_login_hint" />
+
+    <Button
+        android:id="@+id/btValider"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="20dip"
+        android:background="@drawable/btn_bg"
+        android:text="Ajouter"
+        android:textColor="@color/white" />
+
+
+
+</LinearLayout>
